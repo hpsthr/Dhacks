@@ -76,12 +76,15 @@
 }
 
 .burger {
+    float: right;
     padding: 20px;
     display: none;
     cursor: pointer;
 }
 
 .burger div {
+    
+    
     width: 25px;
     height: 3px;
     background-color: black;
@@ -273,18 +276,23 @@
 }
 
 @media screen and (max-width:780px) {
+    nav{
+        
+    }
     .nav-links {
+        display:block;
+        
         position: absolute;
         height: 93%;
         left: 7.5vw;
         top: 4vh;
         background-color: #aaaaaa;
-        flex-direction: column;
+        
         width: 85%;
         transform: translatex(130%);
         transition: transform 0.5s ease-in;
         z-index: 997;
-        justify-content: center;
+      
     }
 
     .l_hover::after {
@@ -294,11 +302,18 @@
     .wiggle {
         display: none;
     }
+    .cAlign{
+        height: auto;
+        width:auto;
+        margin: 30% auto;
+    }
 
     .nav-links li {
+        margin: 6rem auto;
+        display: block;
         opacity: 0;
-        padding-top: 31px;
-        margin: 19px;
+        
+        
     }
 
     .email-text {
@@ -310,17 +325,13 @@
     }
 
     .nav-links a {
-        display: inline-block;
+        display: block;
         margin: 0 5px;
         text-decoration: none;
         color: black;
         font-size: 30px;
         font-family: 'ginger_bold';
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        padding: 0;
-        line-height: 50px;
-        margin: 0 20px;
+       
     }
 
 
@@ -334,6 +345,8 @@
     }
 
     .logo {
+        position: absolute;
+        margin-top: 1rem;
         transition: all 0.5s ease-out;
     }
 
