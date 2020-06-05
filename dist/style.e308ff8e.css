@@ -19,33 +19,26 @@
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .lg {
-    padding-top: 10px;
+    
     padding-left: 20px;
 }
 
 .logo {
+    position: absolute;
     transition: 0.5s ease-out;
 }
 
 .logo.active {
     opacity: 0;
 }
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    width: 60%;
+.nav-links{
+    margin-top: 1rem;
 }
-
-.nav-links li {
-
-    height: 20px;
+.nav-links li {height: 20px;
+    margin-top:  0.5rem ;
     list-style: none;
     display: inline-block;
 }
